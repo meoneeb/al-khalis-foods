@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+QUALITY ASSURED
 
-## Getting Started
+At AL-KHALIS PRIME, quality is not just a promise — it is the foundation of everything we deliver. We are committed to providing premium-quality spices that bring authentic flavor, rich aroma, and exceptional freshness to every kitchen and food business.
+Our spices are carefully sourced from trusted farms and suppliers, ensuring that only the finest raw ingredients are selected for processing. Every product undergoes strict quality inspections and hygienic packaging procedures to maintain purity, taste, and nutritional value.
+We follow modern processing standards combined with traditional expertise to preserve the natural essence of each spice. From red chili and turmeric to black pepper and blended seasonings, every pack of AL-KHALIS PRIME reflects consistency, freshness, and customer satisfaction.
 
-First, run the development server:
+OUR STORY
+AL-KHALIS PRIME was founded with a simple vision — to bring the true taste of authentic spices to every household and business. Inspired by the rich culinary traditions of Pakistan, our journey began with a passion for purity, flavor, and excellence.
+From the very beginning, we believed that quality spices have the power to transform ordinary meals into unforgettable experiences. With dedication and hard work, AL-KHALIS PRIME started as a growing spice brand committed to delivering freshness, aroma, and premium quality in every pack.
+Today, we proudly serve homes, restaurants, hotels, and food industries with a wide range of carefully selected and hygienically packed spices. By combining traditional values with modern processing techniques, we ensure that every product maintains its natural taste and superior quality.
+Our story is built on trust, consistency, and customer satisfaction. Every spice we produce reflects our commitment to excellence and our passion for enhancing flavors across every kitchen.
+At AL-KHALIS PRIME, we are not just selling spices — we are sharing a tradition of taste, purity, and quality that brings people together through food.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+OUR VALUES
+At AL-KHALIS PRIME, our values define who we are and guide everything we do. We are committed to delivering premium-quality spices while building lasting relationships based on trust, integrity, and excellence.
+Purity & Quality
+We believe that the finest flavors begin with the purest ingredients. Every spice is carefully selected, processed, and packaged to ensure exceptional freshness, aroma, and taste.
+Customer Satisfaction
+Our customers are at the heart of our business. We strive to exceed expectations by delivering consistent quality products and reliable service that customers can trust every day.
+Integrity & Trust
+Honesty, transparency, and commitment are the foundations of our company. We believe in maintaining strong relationships with our customers, suppliers, and partners through ethical business practices.
+Passion for Flavor
+Food is more than a meal — it is an experience that brings people together. Our passion is to enhance every dish with rich flavors and authentic taste that create memorable moments.
+Commitment to Growth
+We are dedicated to growing responsibly while maintaining the high standards that define AL-KHALIS PRIME. Our vision is to become a trusted name in the spice industry both locally and internationally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+SOURCED FROM CERTIFIED GROWERS
+our spices are carefully sourced from certified growers who follow high agricultural and quality standards. This ensures every product delivers exceptional freshness, rich aroma, natural flavor, and consistent premium quality in every pack.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+PACKED HYGIENICALLY
+Every product at AL-KHALIS PRIME is packed under strict hygienic conditions using modern packaging standards to preserve freshness and purity. Our secure packaging protects the natural aroma, flavor, and quality of spices from production to delivery.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+LTG
+Low Temperature Grinding. LTG ensures better retention of natural oils & flavours in the spice
 
-## Learn More
+OUR VISION
+our vision is to become a trusted and leading name in the spice industry by delivering products that represent purity, quality, and authentic taste. We aim to bring rich flavors to every kitchen while setting new standards of excellence in the market.
 
-To learn more about Next.js, take a look at the following resources:
+OUR COMMITMENT
+Our commitment is centered around providing premium-quality spices that consistently meet customer expectations. From sourcing the finest ingredients to maintaining hygienic processing and modern packaging standards, we ensure excellence at every stage of production.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+OUR BELIEVE
+We believe that success comes from commitment to quality, passion for excellence, and the confidence our customers place in us every day.

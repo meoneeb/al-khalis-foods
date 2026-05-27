@@ -1,25 +1,127 @@
 @import "tailwindcss";
 
+/*
+ * Al-Khalis Foods — static dark theme (no prefers-color-scheme media queries)
+ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #faf5ee;
+  color-scheme: dark;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display:
+    var(--font-display), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Accents */
+  --color-brand-brick: #a42a22;
+  --color-brand-spice: #e68525;
+  --color-brand-herbal: #6c7232;
+  --color-brand-saffron: #e69824;
+  --color-brand-maroon: #a85a52;
+
+  --color-brand-primary: #c43d32;
+  --color-brand-accent: #e68525;
+  --color-brand-highlight: #e69824;
+
+  /* Dark surfaces — black & charcoal */
+  --color-brand-void: #0a0a0a;
+  --color-brand-elevated: #141414;
+  --color-brand-card: #111111;
+  --color-brand-sand: #1e1e1e;
+  --color-brand-line: #2c2c2c;
+
+  /* Light text & UI on dark */
+  --color-brand-cream: #faf5ee;
+  --color-brand-ink: #faf5ee;
+  --color-brand-muted: #a3a3a3;
+
+  /* Legacy aliases */
+  --color-brand-deep: #faf5ee;
+  --color-brand-gold: #e69824;
+  --color-brand-gold-dim: #b97718;
+  --color-brand-terracotta: #e68525;
+  --color-brand-terracotta-deep: #a42a22;
+  --color-brand-forest: #6c7232;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(
+      ellipse 100% 70% at 12% -8%,
+      color-mix(in srgb, var(--color-brand-brick) 22%, transparent) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 85% 65% at 88% 18%,
+      color-mix(in srgb, var(--color-brand-maroon) 16%, transparent) 0%,
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse 75% 55% at 50% 108%,
+      color-mix(in srgb, var(--color-brand-primary) 14%, transparent) 0%,
+      transparent 50%
+    );
+  color: var(--foreground);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: transparent;
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family:
+      var(--font-display), var(--font-sans), ui-sans-serif, system-ui,
+      sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-brand-cream);
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+    line-height: 1.3;
+  }
+}
+
+@layer components {
+  .sectionContainer {
+    @apply mx-auto w-full max-w-7xl px-4 md:px-8;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent;
+  }
 }
