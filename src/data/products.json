@@ -48,7 +48,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/red-chilli-crushed.webp",
       "imageAlt": "Red Chilli Crushed — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -63,7 +63,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/products/tumeric-powder.webp",
+      "image": "/images/products/turmeric-powder.webp",
       "imageAlt": "Turmeric Powder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -78,7 +78,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/corriander-powder.webp",
       "imageAlt": "Corriander Powder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -93,7 +93,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/crushed-corriander.webp",
       "imageAlt": "Crushed Corrainder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -108,7 +108,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/black-pepper-crushed.webp",
       "imageAlt": "Black Pepper Crushed — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -138,7 +138,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/white-cumin-crushed.webp",
       "imageAlt": "White Cumin Crushed — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -153,7 +153,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/white-cumin-powder.webp",
       "imageAlt": "White Cumin Powder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -168,7 +168,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/white-cumin.webp",
       "imageAlt": "White Cumin Whole — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -183,7 +183,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/white-pepper-powder.webp",
       "imageAlt": "White pepper powder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -213,7 +213,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/ginger-powder.webp",
       "imageAlt": "Ginger Powder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -243,7 +243,7 @@
       "category": "bulk-spices",
       "categoryLabel": "Bulk Spices",
       "packSize": "1000g",
-      "image": "/images/placeholders/product-bulk-spices.svg",
+      "image": "/images/products/kachari-powder.webp",
       "imageAlt": "Kachari Powder — 1000g bulk pack",
       "shortDescription": "Premium ground, crushed, and whole spices for daily commercial kitchen operations — consistent aroma and colour in every 1000g pack.",
       "highlights": [
@@ -273,7 +273,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/biryani-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Biryani Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -288,7 +288,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/qourma-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Quorma Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -318,7 +318,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/achar-gosht-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Achar Gosht Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -333,7 +333,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/karahi-gosht-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Karahi Gosht Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -363,7 +363,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/tikka-boti-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Tikka Boti Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -378,7 +378,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/tandoori-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Tandori Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -408,7 +408,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/fish-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Fish Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -483,7 +483,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/haleem-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Haleem Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -513,7 +513,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/muragh-cholay-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Muragh Cholay Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -528,7 +528,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/nehari-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Nihari Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -543,7 +543,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/broast-mix.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Broast Mix — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -558,7 +558,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/curry-salan-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Curry Salan Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -573,7 +573,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/chaat-masala.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Chaat Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -648,7 +648,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/dahi-bhallay-masala-mix.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Dahi Bhally Masala Mix — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [
@@ -738,7 +738,7 @@
       "category": "bulk-recipe",
       "categoryLabel": "Bulk Recipe",
       "packSize": "1000g",
-      "image": "/images/products/macroni-powder.webp",
+      "image": "/images/placeholders/product-bulk-recipe.svg",
       "imageAlt": "Macaroni Masala — 1000g bulk pack",
       "shortDescription": "Expertly blended masala mixes and ready-to-cook seasonings engineered for scale — reliable flavour batch after batch.",
       "highlights": [

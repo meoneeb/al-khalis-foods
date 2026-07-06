@@ -17,18 +17,18 @@ export default function MobileNav({ nav, contact, open, onClose }) {
   return (
     <Dialog open={open} onClose={onClose} className="relative z-[60] lg:hidden">
       <div
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm"
+        className="fixed inset-0 bg-black/40 backdrop-blur-sm"
         aria-hidden="true"
       />
-      <DialogPanel className="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col border-l border-brand-line bg-brand-card shadow-xl">
-        <div className="flex items-center justify-between border-b border-brand-line px-4 py-4">
-          <DialogTitle className="font-display text-lg font-normal text-brand-cream">
+      <DialogPanel className="fixed inset-y-0 right-0 flex w-full max-w-sm flex-col border-l border-zinc-200 bg-white shadow-xl">
+        <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-4">
+          <DialogTitle className="font-display text-lg font-normal text-zinc-900">
             Menu
           </DialogTitle>
           <button
             type="button"
             onClick={onClose}
-            className="rounded-full p-2 text-brand-muted hover:bg-brand-sand hover:text-brand-cream"
+            className="rounded-full p-2 text-zinc-500 hover:bg-stone-100 hover:text-zinc-900"
             aria-label="Close menu"
           >
             <X className="h-5 w-5" />
@@ -58,8 +58,8 @@ export default function MobileNav({ nav, contact, open, onClose }) {
                 className={clsx(
                   "rounded-xl px-4 py-3.5 text-base font-medium transition",
                   active
-                    ? "bg-brand-saffron text-brand-void"
-                    : "text-brand-cream hover:bg-brand-sand",
+                    ? "bg-red-500 text-white"
+                    : "text-zinc-900 hover:bg-stone-100",
                 )}
               >
                 {item.label}
@@ -70,7 +70,7 @@ export default function MobileNav({ nav, contact, open, onClose }) {
             <a
               href={contact.href}
               onClick={onClose}
-              className="mt-2 flex items-center justify-center rounded-xl border border-amber-400 bg-amber-500 px-4 py-3.5 text-base font-semibold text-brand-cream shadow-xl shadow-amber-500/35 transition hover:border-amber-600 hover:bg-amber-600"
+              className="mt-2 flex items-center justify-center rounded-xl border border-red-500 bg-red-500 px-4 py-3.5 text-base font-semibold text-white shadow-lg shadow-red-500/20 transition hover:border-red-600 hover:bg-red-600"
             >
               {contact.label}
             </a>
@@ -87,12 +87,12 @@ export function MenuButton({ onClick, className }) {
       type="button"
       onClick={onClick}
       className={clsx(
-        "flex h-full min-w-11 items-center justify-center px-2 text-brand-cream hover:bg-brand-sand sm:min-w-12",
+        "flex h-full items-center px-4 text-zinc-900 transition hover:bg-stone-100 sm:px-5",
         className,
       )}
       aria-label="Open menu"
     >
-      <Menu className="h-6 w-6" />
+      <Menu className="h-5 w-5" />
     </button>
   );
 }

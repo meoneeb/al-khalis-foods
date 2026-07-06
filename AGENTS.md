@@ -25,13 +25,17 @@ For UI, layout, motion, and visual polish on this project, prefer a **Frontend &
 **Design rules**
 
 - B2B food-service positioning — professional kitchens, hotels, catering, restaurants, marriage halls; bulk **1000g** packs; not e-commerce.
-- Brand colors: `brand-brick`, `brand-spice`, `brand-saffron`, `brand-maroon`, `brand-herbal` in `src/app/globals.css`.
+- Use **Tailwind default palette** only — no custom `brand-*` tokens. **Red** (`red-500` / `red-600`) is the primary accent; neutrals use `zinc` and `stone`.
 - Fonts: Manrope (body / `--font-sans`), Harper (display / `--font-display`, local files in `src/fonts/harper/`) via `layout.js`. Heading scale (`h1`–`h3`, weight 400) lives in `src/app/globals.css`.
 - Stack: **framer-motion** (`LazyMotion` + `domAnimation`), **@headlessui/react** (mobile nav, filters), **lucide-react** (meaningful icons only).
-- Keep App Router pages as **Server Components**; small `"use client"` islands for motion, filters, and nav.
-- Static **dark theme** only — tokens in `globals.css` (near-black `brand-void`, charcoal surfaces `brand-elevated` / `brand-card`, `brand-cream` text). No `prefers-color-scheme` and no `dark:` utilities.
+- Keep App Router route files in `src/app/` thin — routing, metadata, and data fetching only. Page UI lives in `*Screen.js` under `src/components/pageComponents/<page>/`.
+- **Light default theme** — white background, dark ink text; dark image heroes and alternating section tones (`light` / `stone` / `dark` via `MotionSection`). Tokens in `src/app/globals.css`. Honors `prefers-reduced-motion`.
 - Honor `prefers-reduced-motion` — no parallax or stagger when reduced motion is on.
 - Product images: `/public/images/products/` (match real filenames, often `{id}.webp`); missing files use category placeholders in `/public/images/placeholders/`.
-- Components: shared UI in `src/components/commonComponents/`; page-specific blocks in `src/components/pageComponents/` (`.js` only, not `.jsx`).
-- Section layout: outer `<section className="w-full …bg/border">` + inner `<div className="sectionContainer py-8 md:py-12">` (`.sectionContainer` in `globals.css`: `max-w-7xl`, `px-4 md:px-8`). `MotionSection` applies this automatically.
+- **Component layout:**
+  - `src/app/` — routes, `layout.js`, `globals.css` only
+  - `src/components/commonComponents/` — reusable site UI (`SiteHeader`, `StyledButton`, `MotionSection`, `PageHero`, `CatalogSearch`, etc.)
+  - `src/components/pageComponents/<page>/` — page folder with `<page>Screen.js` entry (e.g. `home/homeScreen.js`, `products/productsScreen.js`, `products/productDetailScreen.js`)
+- Catalog search: reusable `CatalogSearch` + `SearchModal` in `commonComponents`. Defaults in `src/lib/catalog-search.js`.
+- Section layout: outer `<section className="w-full …bg/border">` + inner `<div className="section-container py-8 md:py-12">` (`.section-container` in `globals.css`: `max-w-7xl`, `px-4 md:px-8`). `MotionSection` applies this automatically.
 <!-- END:frontend-design-agent -->

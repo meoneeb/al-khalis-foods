@@ -1,79 +1,22 @@
 @import "tailwindcss";
 
 /*
- * Al-Khalis Foods — static dark theme (no prefers-color-scheme media queries)
+ * Al-Khalis Foods — Tailwind palette, red primary
  */
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #faf5ee;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display:
     var(--font-display), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-
-  /* Accents */
-  --color-brand-brick: #a42a22;
-  --color-brand-spice: #e68525;
-  --color-brand-herbal: #6c7232;
-  --color-brand-saffron: #e69824;
-  --color-brand-maroon: #a85a52;
-
-  --color-brand-primary: #c43d32;
-  --color-brand-accent: #e68525;
-  --color-brand-highlight: #e69824;
-
-  /* Dark surfaces — black & charcoal */
-  --color-brand-void: #0a0a0a;
-  --color-brand-elevated: #141414;
-  --color-brand-card: #111111;
-  --color-brand-sand: #1e1e1e;
-  --color-brand-line: #2c2c2c;
-
-  /* Light text & UI on dark */
-  --color-brand-cream: #faf5ee;
-  --color-brand-ink: #faf5ee;
-  --color-brand-muted: #a3a3a3;
-
-  /* Legacy aliases */
-  --color-brand-deep: #faf5ee;
-  --color-brand-gold: #e69824;
-  --color-brand-gold-dim: #b97718;
-  --color-brand-terracotta: #e68525;
-  --color-brand-terracotta-deep: #a42a22;
-  --color-brand-forest: #6c7232;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--background);
-  background-image:
-    radial-gradient(
-      ellipse 100% 70% at 12% -8%,
-      color-mix(in srgb, var(--color-brand-brick) 22%, transparent) 0%,
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse 85% 65% at 88% 18%,
-      color-mix(in srgb, var(--color-brand-maroon) 16%, transparent) 0%,
-      transparent 52%
-    ),
-    radial-gradient(
-      ellipse 75% 55% at 50% 108%,
-      color-mix(in srgb, var(--color-brand-primary) 14%, transparent) 0%,
-      transparent 50%
-    );
-  color: var(--foreground);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  @apply bg-white text-zinc-900;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -83,9 +26,7 @@ html {
 }
 
 body {
-  background-color: transparent;
-  color: var(--foreground);
-  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  @apply bg-white font-sans text-zinc-900;
 }
 
 @layer base {
@@ -97,7 +38,7 @@ body {
       sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: var(--color-brand-cream);
+    @apply text-zinc-900;
     letter-spacing: -0.02em;
   }
 
@@ -118,10 +59,71 @@ body {
 }
 
 @layer components {
-  .sectionContainer {
+  .section-container {
     @apply mx-auto w-full max-w-7xl px-4 md:px-8;
   }
+
   .gradient-text {
-    @apply bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent;
+  }
+
+  .section-tone-light {
+    @apply bg-white text-zinc-900;
+  }
+
+  .section-tone-stone {
+    @apply bg-stone-100 text-zinc-900;
+  }
+
+  .section-tone-dark {
+    @apply bg-zinc-950 text-zinc-50;
+  }
+
+  .section-tone-dark :is(h1, h2, h3) {
+    @apply text-zinc-50;
+  }
+
+  .page-hero {
+    @apply relative w-full overflow-hidden border-b border-zinc-800/40;
+  }
+
+  .hero-media__image {
+    object-fit: cover;
+    object-position: center;
+    filter: contrast(1.15) saturate(1.2) brightness(0.92);
+  }
+
+  .hero-media__scrim {
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 0.55) 0%,
+      rgb(0 0 0 / 0.25) 45%,
+      rgb(0 0 0 / 0.82) 100%
+    );
+  }
+
+  .hero-media__scrim--left {
+    background: linear-gradient(
+      105deg,
+      rgb(0 0 0 / 0.88) 0%,
+      rgb(0 0 0 / 0.55) 42%,
+      rgb(0 0 0 / 0.35) 100%
+    );
+  }
+
+  .hero-media__vignette {
+    background: radial-gradient(
+      ellipse 88% 68% at 50% 45%,
+      transparent 35%,
+      rgb(0 0 0 / 0.55) 100%
+    );
+  }
+
+  .hero-content-shadow {
+    text-shadow: 0 2px 20px rgb(0 0 0 / 0.85);
+  }
+
+  .hero-heading {
+    @apply text-zinc-50;
   }
 }
