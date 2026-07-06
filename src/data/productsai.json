@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "sku": "red-chilli-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Red Chilli Powder — mound of vivid red chilli powder; whole dried red chilies."
+    },
+    {
+      "sku": "red-chilli-crushed",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Red Chilli Crushed — coarse crushed red chilli flakes; broken dried red chilli pieces."
+    },
+    {
+      "sku": "turmeric-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Turmeric Powder — bright golden turmeric powder; fresh turmeric root slices."
+    },
+    {
+      "sku": "corriander-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Corriander Powder — soft green-tan coriander powder; coriander seeds."
+    },
+    {
+      "sku": "crushed-corrainder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Crushed Corrainder — coarse crushed coriander; whole coriander seeds."
+    },
+    {
+      "sku": "black-pepper-crushed",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Black Pepper Crushed — dark crushed black pepper; whole black peppercorns."
+    },
+    {
+      "sku": "black-pepper-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Black Pepper Powder — fine dark grey-black pepper powder; black peppercorns."
+    },
+    {
+      "sku": "white-cumin-crushed",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: White Cumin Crushed — tan crushed cumin; whole cumin seeds."
+    },
+    {
+      "sku": "white-cumin-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: White Cumin Powder — pale tan cumin powder; whole cumin seeds."
+    },
+    {
+      "sku": "white-cumin-whole",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: White Cumin Whole — whole white cumin seeds."
+    },
+    {
+      "sku": "white-pepper-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: White pepper powder — cream-white pepper powder; white peppercorns."
+    },
+    {
+      "sku": "garlic-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Garlic Powder — fine off-white garlic powder; garlic cloves."
+    },
+    {
+      "sku": "ginger-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Ginger Powder — golden-tan ginger powder; dried ginger root pieces."
+    },
+    {
+      "sku": "lemon-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Lemon Powder — light yellow lemon powder; dried lemon slices."
+    },
+    {
+      "sku": "kachari-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Kachari Powder — earthy brown kachari powder; dried kachari pieces."
+    },
+    {
+      "sku": "papaya-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Papaya Powder — pale green-beige papaya powder; dried papaya chunks."
+    },
+    {
+      "sku": "biryani-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Biryani Masala — golden-orange biryani masala; star anise, bay leaf, cloves."
+    },
+    {
+      "sku": "quorma-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Quorma Masala — rich brown-red qorma masala; cardamom pods, cinnamon stick."
+    },
+    {
+      "sku": "chicken-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Chicken Masala — warm orange-brown chicken masala; dried red chilli, cumin seeds."
+    },
+    {
+      "sku": "achar-gosht-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Achar Gosht Masala — tangy red-brown achar gosht masala; pickled spice tones, fenugreek seeds."
+    },
+    {
+      "sku": "karahi-gosht-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Karahi Gosht Masala — vibrant red karahi masala; dried red chillies, coriander seeds."
+    },
+    {
+      "sku": "tikka-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Tikka Masala — orange-red tikka masala; dried red chilli, kasuri methi leaves."
+    },
+    {
+      "sku": "tikka-boti-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Tikka Boti Masala — orange tikka boti masala; char-grilled spice props, red chilli flakes."
+    },
+    {
+      "sku": "tandori-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Tandori Masala — deep orange-red tandoori masala; kashmiri chilli, kasuri methi."
+    },
+    {
+      "sku": "seekh-kabab-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Seekh Kabab Masala — aromatic seekh kabab masala; cumin seeds, coriander seeds."
+    },
+    {
+      "sku": "fish-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Fish Masala — golden fish masala powder; fenugreek seeds, curry leaves."
+    },
+    {
+      "sku": "sajji-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Sajji Masala — Balochi-style sajji masala; rock salt crystals, whole cumin."
+    },
+    {
+      "sku": "chapali-kabab-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Chapali Kabab Masala — Peshawari chapali kabab masala; coriander seeds, pomegranate seed tones."
+    },
+    {
+      "sku": "chicken-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Chicken Powder — beige savoury chicken powder; dried herb flecks."
+    },
+    {
+      "sku": "bombay-biryani-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Bombay Biryani Masala — golden Bombay biryani masala; star anise, mace, bay leaf."
+    },
+    {
+      "sku": "haleem-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Haleem Masala — warm brown haleem masala; whole spices, lentil-tone flecks."
+    },
+    {
+      "sku": "malai-tikka-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Malai Tikka  Masala — creamy orange malai tikka masala; cashew-tone creaminess, kasuri methi."
+    },
+    {
+      "sku": "muragh-cholay-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Muragh Cholay Masala — muragh cholay masala; chickpeas, dried red chilli."
+    },
+    {
+      "sku": "nihari-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Nihari Masala — rich dark nihari masala; whole garam spices, fennel seeds."
+    },
+    {
+      "sku": "broast-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Broast Mix — golden broast coating mix; golden breadcrumb-style flecks."
+    },
+    {
+      "sku": "curry-salan-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Curry Salan Masala — yellow-amber curry salan masala; turmeric tone, cumin seeds."
+    },
+    {
+      "sku": "chaat-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Chaat Masala — tangy speckled chaat masala; black salt crystals, amchur tone."
+    },
+    {
+      "sku": "garam-masala-mix-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Garam Masala Mix Powder — warm brown garam masala powder; cardamom, cloves, cinnamon."
+    },
+    {
+      "sku": "garam-masala-mix-whole",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Garam Masala Mix Whole — whole garam masala mix; star anise, black peppercorns."
+    },
+    {
+      "sku": "instant-haleem-mix-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Instant Haleem  mix powder — instant haleem mix with visible grains; split lentils, whole spices."
+    },
+    {
+      "sku": "zeera-raita-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Zeera Raita Mix — zeera raita mix with green herb flecks; cumin seeds, mint leaves."
+    },
+    {
+      "sku": "dahi-bhally-masala-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Dahi Bhally Masala Mix — dahi bhalla chaat masala mix; tamarind tone, black salt."
+    },
+    {
+      "sku": "french-fries-masala-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: French Fries Masala Mix — golden french fries masala; paprika flecks, salt crystals."
+    },
+    {
+      "sku": "zinger-merination-mix-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Zinger Merination Mix Masala — spicy orange zinger marination mix; red chilli flakes, garlic powder tone."
+    },
+    {
+      "sku": "zinger-seasoning-mix-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Zinger Seasoning Mix Masala — zinger crispy chicken seasoning; paprika, black pepper flecks."
+    },
+    {
+      "sku": "finger-fish-merination-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Finger Fish Merination Mix — fish fry marination mix; lemon tone, coriander seeds."
+    },
+    {
+      "sku": "finger-fish-seasoning-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Finger Fish Seasoning Mix — crispy fish finger seasoning; lemon zest tone, parsley flecks."
+    },
+    {
+      "sku": "macaroni-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Macaroni Masala — tomato-forward macaroni masala; dried herb flecks, paprika."
+    },
+    {
+      "sku": "badam-pista-kheer-mix",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Badam Pista Kheer Mix — pale gold badam pista kheer mix; sliced almonds, pistachios, saffron strands."
+    },
+    {
+      "sku": "shami-kabab-masala",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Shami Kabab Masala — aromatic shami kabab masala; whole spices, lentil-tone flecks."
+    },
+    {
+      "sku": "yakhni-powder",
+      "aiPrompt": "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded. Product reference: Yakhni Powder — savoury yakhni broth powder; whole garam spices, fennel seeds."
+    }
+  ]
+}

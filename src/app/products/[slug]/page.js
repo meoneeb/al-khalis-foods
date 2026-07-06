@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
-import ProductDetailView from "@/components/pageComponents/ProductDetailView";
-import HeroMotion, { HeroMotionItem } from "@/components/commonComponents/HeroMotion";
+import ProductDetailScreen from "@/components/pageComponents/products/productDetailScreen";
 import {
   getAllProducts,
   getProductBySlug,
@@ -25,27 +24,12 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function ProductDetailPage({ params }) {
+export default async function Page({ params }) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
   const related = getRelatedProducts(slug, 3);
 
-  return (
-    <>
-      <section className="w-full border-b border-brand-line/30">
-        <div className="sectionContainer py-8 md:py-12 pb-8 pt-14 sm:pt-16">
-          <HeroMotion>
-            <HeroMotionItem>
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand-spice">
-                {product.categoryLabel}
-              </p>
-            </HeroMotionItem>
-          </HeroMotion>
-        </div>
-      </section>
-      <ProductDetailView product={product} related={related} />
-    </>
-  );
+  return <ProductDetailScreen product={product} related={related} />;
 }

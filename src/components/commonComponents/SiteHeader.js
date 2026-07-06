@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import clsx from "clsx";
 import site from "@/data/site.json";
 import MobileNav, { MenuButton } from "@/components/commonComponents/MobileNav";
 import { ProductsNavItem } from "@/components/commonComponents/ProductsMegaMenu";
+import SearchModal from "./SearchModal";
 import StyledButton from "./StyledButton";
 
 function isNavActive(pathname, href) {
@@ -18,10 +19,10 @@ function NavLink({ href, label, active }) {
     <Link
       href={href}
       className={clsx(
-        "flex h-full items-center border-b-2 px-4 text-sm font-medium transition sm:px-5",
+        "flex items-center px-4 text-xs transition sm:px-5",
         active
-          ? "border-brand-saffron bg-brand-saffron/10 text-brand-cream"
-          : "border-transparent text-brand-muted hover:bg-white/5 hover:text-brand-cream",
+          ? "font-bold text-red-500"
+          : "font-medium text-zinc-500 hover:text-zinc-900",
       )}
     >
       {label}
@@ -32,51 +33,34 @@ function NavLink({ href, label, active }) {
 function ContactButton({ className }) {
   const { contact } = site;
   return (
-    <a
-      href={contact.href}
-      className={clsx(
-        "flex h-full shrink-0 items-center border-b-2 border-l border-white/10 border-b-transparent bg-amber-500 px-4 text-sm font-semibold text-brand-cream transition hover:bg-amber-600 sm:px-5 max-lg:rounded-none lg:rounded-r-2xl",
-        className,
-      )}
-    >
+    <StyledButton href={contact.href} variant="primary" size="md">
       {contact.label}
-    </a>
+    </StyledButton>
   );
 }
 
 export default function SiteHeader() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <>
-      <div className="pointer-events-none sticky top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4 lg:px-6">
+      <div className="pointer-events-none  z-50 px-3 sm:px-5 lg:px-6">
         <header
           className={clsx(
-            "pointer-events-auto mx-auto max-w-7xl overflow-visible rounded-2xl border shadow-[0_8px_32px_rgba(0,0,0,0.4)] ring-1 ring-inset backdrop-blur-xl backdrop-saturate-150 transition-[background-color,border-color,box-shadow] duration-300",
-            scrolled
-              ? "border-white/15 bg-brand-void/70 shadow-[0_12px_40px_rgba(0,0,0,0.5)] ring-white/10"
-              : "border-white/10 bg-brand-void/35 ring-white/5",
+            "pointer-events-auto mx-auto max-w-7xl overflow-visible",
           )}
         >
-          <div className="sectionContainer grid min-h-14 grid-cols-[1fr_auto_1fr] items-stretch sm:min-h-16">
+          <div className="section-container grid min-h-14 grid-cols-[1fr_auto_1fr] items-stretch sm:min-h-16">
             <div className="flex min-w-0 items-stretch justify-start">
               <Link
                 href="/"
                 className="flex min-w-0 flex-col justify-center px-3 leading-tight sm:px-4"
               >
-                <span className="truncate font-display text-base font-normal tracking-tight text-brand-cream transition-colors hover:text-brand-saffron sm:text-lg">
+                <span className="truncate font-display text-base font-normal tracking-tight text-zinc-900 transition-colors hover:text-red-600 sm:text-lg">
                   {site.brand.displayName}
                 </span>
-                <span className="hidden truncate text-[10px] font-medium uppercase tracking-[0.2em] text-brand-muted md:block md:text-[11px]">
+                <span className="hidden truncate text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:block md:text-[11px]">
                   {site.brand.productLine}
                 </span>
               </Link>
@@ -104,10 +88,12 @@ export default function SiteHeader() {
               })}
             </nav>
 
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end gap-1 sm:gap-2">
+              <SearchModal />
+              <ContactButton className="hidden lg:flex" />
               <MenuButton
                 onClick={() => setMobileOpen(true)}
-                className="rounded-r-2xl border-l border-white/10 lg:hidden"
+                className="rounded-r-2xl border-l border-zinc-200 lg:hidden"
               />
             </div>
           </div>

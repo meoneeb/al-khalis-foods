@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${harper.variable} h-full antialiased`}
+      className={`${manrope.variable} ${harper.variable} h-full bg-white antialiased`}
     >
-      <body className="relative min-h-full font-sans text-brand-cream">
+      <body className="relative min-h-full font-sans text-zinc-900">
         <MotionProvider>
           <div className="relative flex min-h-full flex-col">
             <SiteHeader />

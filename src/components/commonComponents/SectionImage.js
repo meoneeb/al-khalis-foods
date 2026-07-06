@@ -24,7 +24,7 @@ export default function SectionImage({
   return (
     <Wrapper
       {...motionProps}
-      className={`relative aspect-[4/3] overflow-hidden rounded-2xl border border-brand-line/60 shadow-lg ${className}`}
+      className={`relative aspect-[4/3] overflow-hidden rounded-2xl border border-zinc-200/60 shadow-lg ${className}`}
     >
       <Image
         src={src}

@@ -1,11 +1,11 @@
 {
   "brand": {
-    "displayName": "Al-Khalis Foods",
+    "displayName": "Al-Khalis Prime Foods",
     "registeredName": "Al-Khalis Prime Foods Pvt Ltd. Pakistan",
-    "productLine": "AL-KHALIS PRIME",
+    "productLine": "reliable spice partner",
     "tagline": "Premium spice solutions for professional kitchens across Pakistan.",
     "about": "A premium Pakistani spices brand serving hotels, catering, restaurants, marriage halls, and food businesses with bulk, hygienically packed products.",
-    "scopeNote": "This site is for brand and product display only — not an online store."
+    "scopeNote": ""
   },
   "seo": {
     "title": "Al-Khalis Foods | Commercial Spice Solutions",
@@ -22,14 +22,14 @@
   },
   "images": {
     "hero": {
-      "home": "/images/sections/hero-home.svg",
-      "about": "/images/sections/hero-about.svg",
-      "products": "/images/sections/hero-products.svg"
+      "home": "/images/30722.webp",
+      "about": "/images/ginger-powder.webp",
+      "products": "/images/73612.webp"
     },
     "commercialKitchen": "/images/sections/commercial-kitchen.svg",
     "quality": "/images/sections/quality-assured.svg",
     "packing": "/images/sections/hygienic-packing.svg",
-    "productRange": "/images/sections/product-range.svg",
+    "productRange": "/images/hero-image-2.webp",
     "ltg": "/images/sections/ltg-process.svg"
   },
   "focus": {
@@ -103,7 +103,7 @@
       "eyebrow": "About us",
       "title": "Tradition, purity, and excellence at scale",
       "subtitle": "Serving Pakistan's food service industry with premium bulk spices — inspired by culinary heritage, built for professional consistency.",
-      "image": "/images/sections/hero-about.svg"
+      "image": "/images/ginger-powder.webp"
     },
     "commercialFocus": {
       "title": "Spice solutions for food service",

@@ -1,6 +1,7 @@
 "use client";
 
 import { m } from "framer-motion";
+import clsx from "clsx";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
 
 const container = {
@@ -15,14 +16,21 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
 };
 
+const TONE_CLASS = {
+  light: "section-tone-light",
+  stone: "section-tone-stone",
+  dark: "section-tone-dark",
+};
+
 export default function MotionSection({
   children,
   className = "",
   containerClassName = "",
+  tone = "light",
 }) {
   const reduced = usePrefersReducedMotion();
-  const sectionClass = `w-full ${className}`.trim();
-  const innerClass = `sectionContainer py-8 md:py-12 ${containerClassName}`.trim();
+  const sectionClass = clsx("w-full", TONE_CLASS[tone] ?? TONE_CLASS.light, className);
+  const innerClass = `section-container py-8 md:py-12 ${containerClassName}`.trim();
 
   if (reduced) {
     return (
