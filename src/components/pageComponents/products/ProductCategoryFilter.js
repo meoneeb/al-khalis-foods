@@ -27,13 +27,10 @@ export default function ProductCategoryFilter({ categories, products }) {
         {tabs.map((tab) => {
           const Icon = CATEGORY_ICONS[tab.id] ?? Filter;
           return (
-            <Tab
-              key={tab.id}
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-4 py-2.5 text-sm font-medium text-zinc-500 outline-none transition data-selected:border-red-500 data-selected:bg-red-500 data-selected:text-white data-hover:bg-stone-100 data-hover:text-zinc-900"
-            >
+            <Tab key={tab.id} className="chip-tab">
               <Icon className="h-4 w-4 shrink-0" aria-hidden />
               {tab.label}
-              <span className="rounded-full bg-stone-100 px-2 py-0.5 text-xs data-selected:bg-white/25">
+              <span className="rounded-full bg-surface-stone px-2 py-0.5 text-xs data-selected:bg-white/25">
                 {tab.products.length}
               </span>
             </Tab>

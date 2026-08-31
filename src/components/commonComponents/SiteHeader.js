@@ -3,28 +3,16 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import clsx from "clsx";
 import site from "@/data/site.json";
 import MobileNav, { MenuButton } from "@/components/commonComponents/MobileNav";
 import { ProductsNavItem } from "@/components/commonComponents/ProductsMegaMenu";
 import SearchModal from "./SearchModal";
 import StyledButton from "./StyledButton";
-
-function isNavActive(pathname, href) {
-  return href === "/" ? pathname === "/" : pathname.startsWith(href);
-}
+import { desktopNavLinkClass, isNavActive } from "@/lib/nav-styles";
 
 function NavLink({ href, label, active }) {
   return (
-    <Link
-      href={href}
-      className={clsx(
-        "flex items-center px-4 text-xs transition sm:px-5",
-        active
-          ? "font-bold text-red-500"
-          : "font-medium text-zinc-500 hover:text-zinc-900",
-      )}
-    >
+    <Link href={href} className={desktopNavLinkClass(active)}>
       {label}
     </Link>
   );
@@ -33,7 +21,12 @@ function NavLink({ href, label, active }) {
 function ContactButton({ className }) {
   const { contact } = site;
   return (
-    <StyledButton href={contact.href} variant="primary" size="md">
+    <StyledButton
+      href={contact.href}
+      variant="primary"
+      size="md"
+      className={className}
+    >
       {contact.label}
     </StyledButton>
   );
@@ -45,22 +38,19 @@ export default function SiteHeader() {
 
   return (
     <>
-      <div className="pointer-events-none  z-50 px-3 sm:px-5 lg:px-6">
-        <header
-          className={clsx(
-            "pointer-events-auto mx-auto max-w-7xl overflow-visible",
-          )}
-        >
-          <div className="section-container grid min-h-14 grid-cols-[1fr_auto_1fr] items-stretch sm:min-h-16">
-            <div className="flex min-w-0 items-stretch justify-start">
+      <header className="sticky top-0 z-50 border-b border-border bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="flex h-14 items-center justify-between gap-3 sm:h-16 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-stretch lg:gap-0">
+            <div className="flex min-w-0 items-center lg:items-stretch">
               <Link
                 href="/"
-                className="flex min-w-0 flex-col justify-center px-3 leading-tight sm:px-4"
+                className="flex min-w-0 flex-col justify-center leading-tight lg:px-4"
               >
-                <span className="truncate font-display text-base font-normal tracking-tight text-zinc-900 transition-colors hover:text-red-600 sm:text-lg">
-                  {site.brand.displayName}
+                <span className="font-display text-[15px] font-normal tracking-tight text-zinc-900 transition-colors hover:text-brand-hover sm:text-lg">
+                  <span className="lg:hidden">Al-Khalis Prime</span>
+                  <span className="hidden lg:inline">{site.brand.displayName}</span>
                 </span>
-                <span className="hidden truncate text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500 md:block md:text-[11px]">
+                <span className="hidden truncate text-[10px] font-medium uppercase tracking-[0.2em] text-muted md:block md:text-[11px]">
                   {site.brand.productLine}
                 </span>
               </Link>
@@ -88,17 +78,17 @@ export default function SiteHeader() {
               })}
             </nav>
 
-            <div className="flex items-center justify-end gap-1 sm:gap-2">
+            <div className="flex shrink-0 items-center justify-end gap-0.5 sm:gap-1">
               <SearchModal />
               <ContactButton className="hidden lg:flex" />
               <MenuButton
                 onClick={() => setMobileOpen(true)}
-                className="rounded-r-2xl border-l border-zinc-200 lg:hidden"
+                className="lg:hidden"
               />
             </div>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
       <MobileNav
         nav={site.nav}
         contact={site.contact}

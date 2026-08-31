@@ -1,60 +1,88 @@
-import HeroMotion, { HeroMotionItem } from "@/components/commonComponents/HeroMotion";
-import PageHero from "@/components/commonComponents/PageHero";
-import ProductCategoryFilter from "@/components/pageComponents/products/ProductCategoryFilter";
+"use client";
+
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+import ProductsSearchHero from "@/components/pageComponents/products/ProductsSearchHero";
+import ProductGrid from "@/components/pageComponents/products/ProductGrid";
 import MotionSection, { MotionItem } from "@/components/commonComponents/MotionSection";
 import {
   getAllProducts,
-  getCategories,
   getProductsPageMeta,
 } from "@/lib/products";
-import site from "@/data/site.json";
+import {
+  filterCatalogProducts,
+  getTypeFilterLabel,
+  normalizeTypeParam,
+} from "@/lib/catalog-query";
 
-export default function ProductsScreen() {
+function ProductsResultsSummary({ k, type, count }) {
+  const normalizedType = normalizeTypeParam(type);
+  const typeLabel = getTypeFilterLabel(normalizedType);
+
+  if (!k && normalizedType === "all") return null;
+
+  let message = `Showing ${count} product${count === 1 ? "" : "s"}`;
+  if (k) {
+    message += ` for “${k}”`;
+  }
+  if (normalizedType !== "all") {
+    message += k ? ` in ${typeLabel}` : ` in ${typeLabel}`;
+  }
+
+  return (
+    <MotionItem>
+      <p className="text-center text-sm text-muted">{message}</p>
+    </MotionItem>
+  );
+}
+
+function ProductsScreenContent() {
+  const searchParams = useSearchParams();
+  const k = searchParams.get("k") ?? "";
+  const type = normalizeTypeParam(searchParams.get("type"));
+
   const page = getProductsPageMeta();
-  const products = getAllProducts();
-  const categories = getCategories();
-  const heroImage = page.heroImage ?? site.images.hero.products ?? "/images/73612.webp";
+  const allProducts = getAllProducts();
+  const products = filterCatalogProducts(allProducts, { k, type });
 
   return (
     <>
-      <PageHero
-        image={heroImage}
-        align="left"
-        size="default"
-        priority
-        scrim="left"
-        contentClassName="max-w-3xl"
-      >
-        <HeroMotion className="hero-content-shadow">
-          <HeroMotionItem>
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-500">
-              {page.eyebrow}
-            </p>
-          </HeroMotionItem>
-          <HeroMotionItem>
-            <h1 className="hero-heading mt-3 max-w-3xl">{page.title}</h1>
-          </HeroMotionItem>
-          <HeroMotionItem>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-50/95 sm:text-lg">
-              {page.subtitle}
-            </p>
-          </HeroMotionItem>
-          <HeroMotionItem>
-            <p className="mt-6 text-sm font-medium text-zinc-50/90">
-              {products.length} products · 1000g bulk packs
-            </p>
-          </HeroMotionItem>
-        </HeroMotion>
-      </PageHero>
+      <ProductsSearchHero
+        page={page}
+        productCount={allProducts.length}
+        initialQuery={k}
+        initialType={type}
+      />
 
-      <MotionSection tone="stone">
+      <MotionSection tone="light">
+        <ProductsResultsSummary k={k} type={type} count={products.length} />
         <MotionItem>
-          <p className="text-center text-sm text-zinc-500">{page.disclaimer}</p>
+          <p className="text-center text-sm text-muted">{page.disclaimer}</p>
         </MotionItem>
         <div className="mt-10">
-          <ProductCategoryFilter categories={categories} products={products} />
+          {products.length > 0 ? (
+            <ProductGrid products={products} />
+          ) : (
+            <p className="text-center text-sm text-muted">
+              No products match your search. Try a different keyword or filter.
+            </p>
+          )}
         </div>
       </MotionSection>
     </>
+  );
+}
+
+export default function ProductsScreen() {
+  return (
+    <Suspense
+      fallback={
+        <div className="section-container section-inner py-16 text-center text-muted">
+          Loading catalog…
+        </div>
+      }
+    >
+      <ProductsScreenContent />
+    </Suspense>
   );
 }

@@ -2,16 +2,7 @@
 
 import { m } from "framer-motion";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
-
-const stagger = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.1 } },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
-};
+import { heroMotion } from "@/lib/motion";
 
 export default function HeroMotion({ children, className = "" }) {
   const reduced = usePrefersReducedMotion();
@@ -21,7 +12,7 @@ export default function HeroMotion({ children, className = "" }) {
   return (
     <m.div
       className={className}
-      variants={stagger}
+      variants={heroMotion.container}
       initial="hidden"
       animate="show"
     >
@@ -34,7 +25,7 @@ export function HeroMotionItem({ children, className = "" }) {
   const reduced = usePrefersReducedMotion();
   if (reduced) return <div className={className}>{children}</div>;
   return (
-    <m.div variants={fadeUp} className={className}>
+    <m.div variants={heroMotion.item} className={className}>
       {children}
     </m.div>
   );

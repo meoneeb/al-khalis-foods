@@ -1,11 +1,21 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
+import tsParser from "@typescript-eslint/parser";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
-  // Override default ignores of eslint-config-next.
+  // ESLint 10 workaround: replace Next's bundled babel parser (missing addGlobals)
+  // and pin react version to avoid eslint-plugin-react getFilename crash.
+  {
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+    settings: {
+      react: { version: "19.2" },
+    },
+  },
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",

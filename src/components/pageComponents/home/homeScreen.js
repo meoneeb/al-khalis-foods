@@ -3,6 +3,8 @@ import SectionImage from "@/components/commonComponents/SectionImage";
 import MotionSection, {
   MotionItem,
 } from "@/components/commonComponents/MotionSection";
+import Eyebrow from "@/components/commonComponents/Eyebrow";
+import Card from "@/components/commonComponents/Card";
 import AudienceChips from "@/components/pageComponents/home/AudienceChips";
 import FeaturedProducts from "@/components/pageComponents/home/FeaturedProducts";
 import SplitSection from "@/components/commonComponents/SplitSection";
@@ -33,9 +35,7 @@ export default function HomeScreen() {
           </h2>
         </MotionItem>
         <MotionItem>
-          <p className="mt-6 text-base leading-relaxed text-zinc-500">
-            {focus.mainFocus[0]}
-          </p>
+          <p className="prose-muted mt-6">{focus.mainFocus[0]}</p>
         </MotionItem>
         <AudienceChips audiences={focus.audiences} />
       </MotionSection>
@@ -51,9 +51,7 @@ export default function HomeScreen() {
 
       <MotionSection tone="dark">
         <MotionItem>
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.3em] text-red-500">
-            Our Range
-          </p>
+          <Eyebrow align="center">Our Range</Eyebrow>
           <h2 className="mt-3 text-center">Complete Commercial Solutions</h2>
         </MotionItem>
         <MotionItem>
@@ -66,9 +64,7 @@ export default function HomeScreen() {
         <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {focus.productRange.map((item) => (
             <MotionItem key={item}>
-              <div className="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-sm font-medium text-zinc-50">
-                {item}
-              </div>
+              <Card variant="dark" as="div">{item}</Card>
             </MotionItem>
           ))}
         </ul>
@@ -76,14 +72,12 @@ export default function HomeScreen() {
 
       <MotionSection tone="light">
         <MotionItem>
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
-            Why AL-KHALIS PRIME
-          </p>
+          <Eyebrow variant="muted" align="center">Why AL-KHALIS PRIME</Eyebrow>
         </MotionItem>
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid-cards">
           {home.pillars.map((p) => (
             <MotionItem key={p.title}>
-              <article className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
+              <Card>
                 {p.image ? (
                   <div className="relative aspect-[16/9]">
                     <SectionImage
@@ -93,13 +87,11 @@ export default function HomeScreen() {
                     />
                   </div>
                 ) : null}
-                <div className="p-6">
+                <div className="card-body">
                   <h3>{p.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-zinc-500">
-                    {p.body}
-                  </p>
+                  <p className="prose-muted-sm mt-3">{p.body}</p>
                 </div>
-              </article>
+              </Card>
             </MotionItem>
           ))}
         </div>
@@ -107,10 +99,7 @@ export default function HomeScreen() {
 
       <FeaturedProducts products={featured} tone="stone" />
 
-      <MotionSection
-        tone="dark"
-        containerClassName="grid items-center gap-10 lg:grid-cols-2 lg:gap-14"
-      >
+      <MotionSection tone="dark" containerClassName="grid-split">
         <MotionItem>
           <SectionImage
             src={home.ltg.image ?? images.ltg}
@@ -119,10 +108,8 @@ export default function HomeScreen() {
         </MotionItem>
         <MotionItem>
           <h2>{home.ltg.title}</h2>
-          <p className="mt-4 text-base leading-relaxed text-zinc-400">
-            {home.ltg.body}
-          </p>
-          <p className="mt-8 text-sm text-zinc-400">{brand.scopeNote}</p>
+          <p className="prose-muted-dark mt-4">{home.ltg.body}</p>
+          <p className="mt-8 text-sm text-muted-dark">{brand.scopeNote}</p>
         </MotionItem>
       </MotionSection>
     </>

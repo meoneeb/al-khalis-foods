@@ -14,16 +14,14 @@ export default function SplitSection({
     <MotionSection
       tone={tone}
       className={className}
-      containerClassName={`grid items-center gap-10 lg:grid-cols-2 lg:gap-14 ${
-        reverse ? "lg:[&>*:first-child]:order-2" : ""
-      }`}
+      containerClassName={`grid-split ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}
     >
       <MotionItem>
         <SectionImage src={image} alt={imageAlt ?? title} />
       </MotionItem>
       <MotionItem>
         <h2>{title}</h2>
-        <div className="mt-6 space-y-4 text-base leading-relaxed text-zinc-500">
+        <div className="prose-muted mt-6 space-y-4">
           {paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}

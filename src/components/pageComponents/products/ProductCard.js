@@ -3,43 +3,47 @@
 import Link from "next/link";
 import { m } from "framer-motion";
 import { ArrowRight, Package } from "lucide-react";
-import ProductImage from "./ProductImage";
+import clsx from "clsx";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
+import ProductImage from "./ProductImage";
 
 export default function ProductCard({ product }) {
   const reduced = usePrefersReducedMotion();
-  const Wrapper = reduced ? "div" : m.article;
+  const Wrapper = reduced ? "article" : m.article;
 
   return (
     <Wrapper
       layout={!reduced}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:border-red-500/50 hover:shadow-md"
+      className={clsx("group flex flex-col card card-interactive")}
     >
-      <Link href={`/products/${product.id}`} className="block">
+      <Link href={`/products/${product.id}`} className="flex flex-col">
         <ProductImage
           src={product.image}
           alt={product.imageAlt}
           category={product.category}
-          className="rounded-none rounded-t-2xl"
+          className="rounded-none rounded-t-2xl border-0 bg-surface-stone"
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 280px"
         />
-        <div className="flex flex-1 flex-col p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-red-500">
+        <div className="flex flex-1 flex-col card-body-compact">
+          <p className="eyebrow eyebrow-accent tracking-wider">
             {product.categoryLabel}
           </p>
-          <h3 className="mt-2 group-hover:text-red-600">
+          <h3 className="mt-2 line-clamp-2 group-hover:text-brand-hover">
             {product.name}
           </h3>
-          <p className="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-zinc-500">
+          <p className="prose-muted-sm mt-2 line-clamp-2 flex-1">
             {product.shortDescription}
           </p>
-          <div className="mt-4 flex items-center justify-between border-t border-zinc-200/40 pt-4">
-            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-500">
-              <Package className="h-3.5 w-3.5 text-red-500" aria-hidden />
+          <div className="mt-4 flex items-center justify-between gap-3 border-t border-border/40 pt-4">
+            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted">
+              <Package className="h-3.5 w-3.5 shrink-0 text-brand" aria-hidden />
               {product.packSize}
             </span>
-            <span className="inline-flex items-center gap-1 text-xs font-semibold text-red-600">
+            <span className="inline-flex items-center gap-1 text-xs font-semibold text-brand-hover">
               View
-              <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+              <ArrowRight
+                className="h-3.5 w-3.5 transition group-hover:translate-x-0.5"
+              />
             </span>
           </div>
         </div>

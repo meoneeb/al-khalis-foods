@@ -7,7 +7,7 @@ export default function ProductNotFoundScreen() {
       <p className="mt-4 text-zinc-500">
         This product is not in our catalog. Browse the full range below.
       </p>
-      <StyledButton href="/products" className="mt-8">
+      <StyledButton href="/products" size="md" className="mt-8">
         View all products
       </StyledButton>
     </div>

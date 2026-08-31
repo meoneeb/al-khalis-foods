@@ -17,8 +17,9 @@
     { "href": "/products", "label": "Products", "megaMenu": "products" }
   ],
   "contact": {
-    "href": "mailto:info@alkhalisfoods.com",
-    "label": "Contact"
+    "href": "/contact",
+    "label": "Contact",
+    "email": "info@alkhalisfoods.com"
   },
   "images": {
     "hero": {
@@ -168,6 +169,62 @@
     "belief": {
       "title": "What we believe",
       "body": "Success comes from commitment to quality, passion for excellence, and the confidence our customers place in us every day."
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Connect with AL-KHALIS PRIME",
+      "subtitle": "Questions about our bulk catalog, product specifications, or becoming a distributor? Our team supports professional kitchens across Pakistan.",
+      "image": "/images/sections/commercial-kitchen.svg"
+    },
+    "intro": "This site showcases our commercial spice range for hotels, catering, restaurants, marriage halls, and food businesses. For availability, pricing, and orders, reach out directly — we respond to genuine business enquiries.",
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Share your business details and we will get back to you.",
+      "submitLabel": "Send message",
+      "topics": [
+        { "value": "general", "label": "General enquiry" },
+        { "value": "distributor", "label": "Distributor / partnership" },
+        { "value": "bulk", "label": "Bulk supply" },
+        { "value": "catalog", "label": "Product catalog question" }
+      ]
+    },
+    "channels": [
+      {
+        "id": "email",
+        "icon": "mail",
+        "label": "Email",
+        "value": "info@alkhalisfoods.com",
+        "href": "mailto:info@alkhalisfoods.com",
+        "hint": "General enquiries and catalog questions"
+      },
+      {
+        "id": "company",
+        "icon": "building",
+        "label": "Registered name",
+        "value": "Al-Khalis Prime Foods Pvt Ltd.",
+        "hint": "Pakistan"
+      },
+      {
+        "id": "catalog",
+        "icon": "package",
+        "label": "Product catalog",
+        "value": "51 bulk SKUs in 1000g packs",
+        "href": "/products",
+        "hint": "Browse the full display catalog online"
+      }
+    ],
+    "ordering": {
+      "title": "Ordering & availability",
+      "paragraphs": [
+        "Product information on this website is for display purposes only. We do not process orders through this site.",
+        "Contact us for commercial availability, distributor information, and bulk supply for your kitchen or food business."
+      ]
+    },
+    "audiences": {
+      "title": "Who we serve",
+      "body": "AL-KHALIS PRIME is built for high-volume food service — consistent quality, hygienic packing, and authentic flavour at scale."
     }
   },
   "footer": {

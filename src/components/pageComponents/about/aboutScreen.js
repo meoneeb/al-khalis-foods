@@ -1,5 +1,7 @@
 import HeroMotion, { HeroMotionItem } from "@/components/commonComponents/HeroMotion";
 import PageHero from "@/components/commonComponents/PageHero";
+import Eyebrow from "@/components/commonComponents/Eyebrow";
+import Card from "@/components/commonComponents/Card";
 import MotionSection, { MotionItem } from "@/components/commonComponents/MotionSection";
 import SplitSection from "@/components/commonComponents/SplitSection";
 import site from "@/data/site.json";
@@ -19,17 +21,13 @@ export default function AboutScreen() {
       >
         <HeroMotion className="hero-content-shadow">
           <HeroMotionItem>
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-red-500">
-              {about.hero.eyebrow}
-            </p>
+            <Eyebrow>{about.hero.eyebrow}</Eyebrow>
           </HeroMotionItem>
           <HeroMotionItem>
             <h1 className="hero-heading mt-3 max-w-3xl">{about.hero.title}</h1>
           </HeroMotionItem>
           <HeroMotionItem>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-50/95 sm:text-lg">
-              {about.hero.subtitle}
-            </p>
+            <p className="hero-subtitle mt-5 max-w-2xl">{about.hero.subtitle}</p>
           </HeroMotionItem>
         </HeroMotion>
       </PageHero>
@@ -58,7 +56,7 @@ export default function AboutScreen() {
         <div className="mt-6 space-y-4">
           {about.story.paragraphs.map((p, i) => (
             <MotionItem key={i}>
-              <p className="text-base leading-relaxed text-zinc-500">{p}</p>
+              <p className="prose-muted">{p}</p>
             </MotionItem>
           ))}
         </div>
@@ -67,19 +65,17 @@ export default function AboutScreen() {
       <MotionSection tone="light">
         <MotionItem>
           <h2 className="text-center">{about.values.title}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-zinc-500">
+          <p className="prose-muted mx-auto mt-4 max-w-2xl text-center">
             {about.values.intro}
           </p>
         </MotionItem>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid-cards">
           {about.values.items.map((v) => (
             <MotionItem key={v.title}>
-              <article className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
+              <Card variant="compact">
                 <h3>{v.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-500">
-                  {v.body}
-                </p>
-              </article>
+                <p className="prose-muted-sm mt-2">{v.body}</p>
+              </Card>
             </MotionItem>
           ))}
         </div>
@@ -89,26 +85,20 @@ export default function AboutScreen() {
         <MotionItem>
           <article>
             <h2>{about.vision.title}</h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400">
-              {about.vision.body}
-            </p>
+            <p className="prose-muted-dark mt-4">{about.vision.body}</p>
           </article>
         </MotionItem>
         <MotionItem>
           <article>
             <h2>{about.commitment.title}</h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400">
-              {about.commitment.body}
-            </p>
+            <p className="prose-muted-dark mt-4">{about.commitment.body}</p>
           </article>
         </MotionItem>
         <MotionItem>
-          <article className="rounded-2xl border border-red-500/30 bg-zinc-900 p-6">
+          <Card variant="highlight">
             <h2>{about.belief.title}</h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400">
-              {about.belief.body}
-            </p>
-          </article>
+            <p className="prose-muted-dark mt-4">{about.belief.body}</p>
+          </Card>
         </MotionItem>
       </MotionSection>
     </>
