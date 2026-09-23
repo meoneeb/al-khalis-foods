@@ -20,8 +20,7 @@ export default function ProductCard({ product }) {
         <ProductImage
           src={product.image}
           alt={product.imageAlt}
-          category={product.category}
-          className="rounded-none rounded-t-2xl border-0 bg-surface-stone"
+          className="rounded-none rounded-b-none rounded-t-2xl border-none bg-surface-stone cover aspect-square"
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 280px"
         />
         <div className="flex flex-1 flex-col card-body-compact">

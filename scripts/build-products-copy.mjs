@@ -4,7 +4,7 @@ const products = JSON.parse(
   fs.readFileSync("src/data/products.json", "utf8"),
 );
 
-/** Product identity notes only — packaging (print + photo) stays unchanged. */
+/** Product identity notes only - packaging (print + photo) stays unchanged. */
 const SKU_GRAPHICS = {
   "red-chilli-powder": {
     bowl: "mound of vivid red chilli powder",
@@ -263,10 +263,10 @@ const SKU_GRAPHICS = {
 };
 
 const PACKAGING_LOCK =
-  "Do not modify the packaging in any way — no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded.";
+  "Do not modify the packaging in any way - no changes to print, photo areas, bowls, elements, colors, typography, layout, or borders. Use the reference pack image exactly as uploaded.";
 
 function productRef(name, detail) {
-  return `${PACKAGING_LOCK} Product reference: ${name}${detail ? ` — ${detail}` : ""}.`;
+  return `${PACKAGING_LOCK} Product reference: ${name}${detail ? ` - ${detail}` : ""}.`;
 }
 
 function formatProductDetail({ bowl, elements }) {

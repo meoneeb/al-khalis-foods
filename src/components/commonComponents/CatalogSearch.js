@@ -191,7 +191,7 @@ export default function CatalogSearch({
           }
         >
           <TabList
-            className="mt-4 flex flex-wrap justify-center gap-2"
+            className="mt-4 flex flex-wrap justify-center gap-0 bg-white border border-border w-fit mx-auto rounded-full p-1.5"
             aria-label="Filter by product type"
           >
             {CATALOG_TYPE_FILTERS.map((opt) => (
@@ -230,7 +230,6 @@ export default function CatalogSearch({
                   <ProductImage
                     src={product.image}
                     alt=""
-                    category={product.category}
                     variant="thumb"
                   />
                   <div className="min-w-0 flex-1">

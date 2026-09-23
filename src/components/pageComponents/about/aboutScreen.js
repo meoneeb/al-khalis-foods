@@ -1,8 +1,12 @@
-import HeroMotion, { HeroMotionItem } from "@/components/commonComponents/HeroMotion";
+import HeroMotion, {
+  HeroMotionItem,
+} from "@/components/commonComponents/HeroMotion";
 import PageHero from "@/components/commonComponents/PageHero";
 import Eyebrow from "@/components/commonComponents/Eyebrow";
 import Card from "@/components/commonComponents/Card";
-import MotionSection, { MotionItem } from "@/components/commonComponents/MotionSection";
+import MotionSection, {
+  MotionItem,
+} from "@/components/commonComponents/MotionSection";
 import SplitSection from "@/components/commonComponents/SplitSection";
 import site from "@/data/site.json";
 
@@ -12,7 +16,7 @@ export default function AboutScreen() {
   return (
     <>
       <PageHero
-        image={about.hero.image ?? images.hero.about ?? "/images/ginger-powder.webp"}
+        image={about.hero.image ?? images.hero.about}
         align="left"
         size="default"
         priority
@@ -27,7 +31,9 @@ export default function AboutScreen() {
             <h1 className="hero-heading mt-3 max-w-3xl">{about.hero.title}</h1>
           </HeroMotionItem>
           <HeroMotionItem>
-            <p className="hero-subtitle mt-5 max-w-2xl">{about.hero.subtitle}</p>
+            <p className="hero-subtitle mt-5 max-w-2xl">
+              {about.hero.subtitle}
+            </p>
           </HeroMotionItem>
         </HeroMotion>
       </PageHero>

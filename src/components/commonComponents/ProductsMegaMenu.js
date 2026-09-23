@@ -115,50 +115,68 @@ export function ProductsMobileNav({ pathname, onClose }) {
   const active = pathname.startsWith("/products");
 
   return (
-    <Disclosure as="div" className="rounded-xl border border-border">
-      <DisclosureButton className={mobileNavTriggerClass(active)}>
-        Products
-        <ChevronDown
-          className="h-5 w-5 [[data-open]_&]:rotate-180"
-          aria-hidden
-        />
-      </DisclosureButton>
-      <DisclosurePanel className="border-t border-border px-3 pb-3 pt-2">
-        <StyledButton
-          href="/products"
-          size="md"
-          className="mb-3 w-full"
-          onClick={onClose}
-        >
-          View all {total} products
-          <ArrowRight className="h-4 w-4" aria-hidden />
-        </StyledButton>
-        {columns.map((col) => (
-          <div key={col.id} className="mb-4 last:mb-0">
-            <Link
+    <Disclosure
+      as="div"
+      className={clsx(
+        "border-b",
+        active ? "border-brand" : "border-border",
+      )}
+    >
+      {({ open }) => (
+        <>
+          <DisclosureButton
+            className={clsx(
+              mobileNavTriggerClass(active),
+              "!border-b-0",
+              open && !active && "text-brand-hover",
+            )}
+          >
+            Products
+            <ChevronDown
+              className="h-5 w-5 shrink-0 text-muted transition [[data-open]_&]:rotate-180"
+              aria-hidden
+            />
+          </DisclosureButton>
+          <DisclosurePanel className="pb-4 pt-1">
+            <StyledButton
               href="/products"
+              size="md"
+              className="mb-4 w-full"
               onClick={onClose}
-              className="block px-2 py-1 text-sm font-semibold text-brand"
             >
-              {col.label}
-              <span className="ml-2 font-normal text-muted">({col.total})</span>
-            </Link>
-            <ul className="mt-1 space-y-0.5">
-              {col.products.slice(0, 4).map((p) => (
-                <li key={p.id}>
-                  <Link
-                    href={`/products/${p.id}`}
-                    onClick={onClose}
-                    className="block rounded-lg px-2 py-2 text-sm text-muted hover:bg-surface-stone hover:text-zinc-900"
-                  >
-                    {p.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </DisclosurePanel>
+              View all {total} products
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </StyledButton>
+            {columns.map((col) => (
+              <div key={col.id} className="mb-4 last:mb-0">
+                <Link
+                  href="/products"
+                  onClick={onClose}
+                  className="block py-1.5 text-sm font-semibold text-brand"
+                >
+                  {col.label}
+                  <span className="ml-2 font-normal text-muted">
+                    ({col.total})
+                  </span>
+                </Link>
+                <ul className="mt-0.5 space-y-0.5">
+                  {col.products.slice(0, 4).map((p) => (
+                    <li key={p.id}>
+                      <Link
+                        href={`/products/${p.id}`}
+                        onClick={onClose}
+                        className="block py-2 text-sm text-muted transition hover:text-zinc-900"
+                      >
+                        {p.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </DisclosurePanel>
+        </>
+      )}
     </Disclosure>
   );
 }

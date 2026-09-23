@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -40,18 +41,27 @@ export default function SiteHeader() {
     <>
       <header className="sticky top-0 z-50 border-b border-border bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex h-14 items-center justify-between gap-3 sm:h-16 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-stretch lg:gap-0">
+          <div className="flex items-center justify-between gap-3 h-16 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-stretch lg:gap-0">
             <div className="flex min-w-0 items-center lg:items-stretch">
               <Link
                 href="/"
-                className="flex min-w-0 flex-col justify-center leading-tight lg:px-4"
+                className="flex min-w-0 items-center gap-2.5 leading-tight lg:gap-3 lg:px-4"
               >
-                <span className="font-display text-[15px] font-normal tracking-tight text-zinc-900 transition-colors hover:text-brand-hover sm:text-lg">
-                  <span className="lg:hidden">Al-Khalis Prime</span>
-                  <span className="hidden lg:inline">{site.brand.displayName}</span>
-                </span>
-                <span className="hidden truncate text-[10px] font-medium uppercase tracking-[0.2em] text-muted md:block md:text-[11px]">
-                  {site.brand.productLine}
+                <img
+                  src="/images/alkhalis/logo.webp"
+                  alt="Al-Khalis Prime Foods Pvt Ltd."
+                  className="object-contain aspect-auto h-14"
+                />
+                <span className="flex min-w-0 flex-col justify-center">
+                  <span className="font-display text-[15px] font-normal tracking-tight text-zinc-900 transition-colors hover:text-brand-hover sm:text-lg">
+                    <span className="lg:hidden">Al-Khalis Prime</span>
+                    <span className="hidden lg:inline">
+                      {site.brand.displayName}
+                    </span>
+                  </span>
+                  <span className="hidden truncate text-[10px] font-medium uppercase tracking-[0.2em] text-muted md:block md:text-[11px]">
+                    {site.brand.productLine}
+                  </span>
                 </span>
               </Link>
             </div>

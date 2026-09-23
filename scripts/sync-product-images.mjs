@@ -3,6 +3,7 @@ import path from "path";
 
 const ROOT = process.cwd();
 const productsPath = path.join(ROOT, "src/data/products.json");
+const sitePath = path.join(ROOT, "src/data/site.json");
 const imagesDir = path.join(ROOT, "public/images/products");
 
 /** Product id → image filename stem when they differ on disk. */
@@ -11,11 +12,10 @@ const STEM_OVERRIDES = {
   "white-cumin-whole": "white-cumin",
 };
 
-const PLACEHOLDERS = {
-  "bulk-spices": "/images/placeholders/product-bulk-spices.svg",
-  "bulk-recipe": "/images/placeholders/product-bulk-recipe.svg",
-  dessert: "/images/placeholders/product-dessert.svg",
-};
+const site = JSON.parse(fs.readFileSync(sitePath, "utf8"));
+const PRODUCT_PLACEHOLDER =
+  site.placeholders?.find((p) => p.type === "product")?.path ??
+  "/images/placeholders/product-package.webp";
 
 const products = JSON.parse(fs.readFileSync(productsPath, "utf8"));
 const files = fs.readdirSync(imagesDir);
@@ -36,7 +36,7 @@ function resolveImage(item) {
   if (match) {
     return `/images/products/${match}`;
   }
-  return PLACEHOLDERS[item.category] ?? PLACEHOLDERS["bulk-recipe"];
+  return PRODUCT_PLACEHOLDER;
 }
 
 let updated = 0;

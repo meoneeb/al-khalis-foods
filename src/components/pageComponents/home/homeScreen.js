@@ -72,7 +72,7 @@ export default function HomeScreen() {
 
       <MotionSection tone="light">
         <MotionItem>
-          <Eyebrow variant="muted" align="center">Why AL-KHALIS PRIME</Eyebrow>
+          <Eyebrow variant="muted" align="center">Why Al-Khalis Prime Foods</Eyebrow>
         </MotionItem>
         <div className="mt-10 grid-cards">
           {home.pillars.map((p) => (

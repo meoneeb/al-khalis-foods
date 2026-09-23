@@ -4,11 +4,10 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import ProductsSearchHero from "@/components/pageComponents/products/ProductsSearchHero";
 import ProductGrid from "@/components/pageComponents/products/ProductGrid";
-import MotionSection, { MotionItem } from "@/components/commonComponents/MotionSection";
-import {
-  getAllProducts,
-  getProductsPageMeta,
-} from "@/lib/products";
+import MotionSection, {
+  MotionItem,
+} from "@/components/commonComponents/MotionSection";
+import { getAllProducts, getProductsPageMeta } from "@/lib/products";
 import {
   filterCatalogProducts,
   getTypeFilterLabel,

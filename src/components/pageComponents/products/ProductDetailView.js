@@ -20,7 +20,6 @@ export default function ProductDetailView({ product, related }) {
           <ProductImage
             src={product.image}
             alt={product.imageAlt}
-            category={product.category}
             priority
             className="mx-auto w-full max-w-xs border border-border bg-white shadow-sm sm:max-w-sm lg:sticky lg:top-24 lg:mx-0 lg:max-w-none"
             sizes="(max-width: 1024px) 80vw, 448px"

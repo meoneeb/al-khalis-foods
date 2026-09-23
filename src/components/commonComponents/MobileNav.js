@@ -36,7 +36,7 @@ export default function MobileNav({ nav, contact, open, onClose }) {
           </button>
         </div>
         <nav
-          className="flex flex-1 flex-col gap-1 overflow-y-auto p-4"
+          className="flex flex-1 flex-col overflow-y-auto px-4 pb-6 pt-2"
           aria-label="Mobile"
         >
           {nav.map((item) => {
@@ -66,7 +66,7 @@ export default function MobileNav({ nav, contact, open, onClose }) {
             <StyledButton
               href={contact.href}
               size="md"
-              className="mt-2 w-full"
+              className="mt-6 w-full"
               onClick={onClose}
             >
               {contact.label}

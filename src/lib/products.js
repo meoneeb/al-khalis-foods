@@ -21,11 +21,6 @@ export function getProductsPageMeta() {
   return productsData.page;
 }
 
-export function getCategoryPlaceholder(categoryId) {
-  const cat = productsData.categories.find((c) => c.id === categoryId);
-  return cat?.placeholderImage ?? "/images/placeholders/product-default.svg";
-}
-
 export function getRelatedProducts(slug, limit = 3) {
   const product = getProductBySlug(slug);
   if (!product) return [];

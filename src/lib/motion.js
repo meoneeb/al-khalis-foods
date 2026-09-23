@@ -1,4 +1,4 @@
-/** Shared motion tokens — import in MotionSection, HeroMotion, and animated components. */
+/** Shared motion tokens - import in MotionSection, HeroMotion, and animated components. */
 
 export const EASE_OUT = [0.22, 1, 0.36, 1];
 

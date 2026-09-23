@@ -10,7 +10,7 @@ export default function AudienceChips({ audiences }) {
   const reduced = usePrefersReducedMotion();
 
   return (
-    <ul className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
+    <ul className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-4">
       {audiences.map((a, i) => {
         const Icon = getAudienceIcon(a.icon);
         const chip = <Chip icon={Icon}>{a.label}</Chip>;

@@ -3,19 +3,22 @@
 import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
-import { getCategoryPlaceholder } from "@/lib/products";
+import site from "@/data/site.json";
+
+const PRODUCT_PLACEHOLDER =
+  site.placeholders?.find((p) => p.type === "product")?.path ??
+  "/images/placeholders/product-package.webp";
 
 export default function ProductImage({
   src,
   alt,
-  category,
   priority = false,
   className = "",
   sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
   variant = "default",
 }) {
   const [failed, setFailed] = useState(false);
-  const displaySrc = failed ? getCategoryPlaceholder(category) : src;
+  const displaySrc = failed ? PRODUCT_PLACEHOLDER : src;
   const isThumb = variant === "thumb";
 
   return (
@@ -36,7 +39,7 @@ export default function ProductImage({
         priority={priority}
         sizes={isThumb ? "48px" : sizes}
         className={clsx(
-          "object-contain p-0 transition-transform duration-300",
+          "object-cover p-0 transition-transform duration-300",
           !isThumb && "group-hover:scale-105",
           isThumb && "p-0",
         )}

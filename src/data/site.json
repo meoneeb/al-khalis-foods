@@ -9,7 +9,7 @@
   },
   "seo": {
     "title": "Al-Khalis Foods | Commercial Spice Solutions",
-    "description": "AL-KHALIS PRIME — premium bulk spices and masala blends in 1000g packs for hotels, catering, restaurants, and food service. Hygienic packing, consistent quality."
+    "description": "Al-Khalis Prime Foods - premium bulk spices and masala blends in 1000g packs for hotels, catering, restaurants, and food service. Hygienic packing, consistent quality."
   },
   "nav": [
     { "href": "/", "label": "Home" },
@@ -27,16 +27,25 @@
       "about": "/images/ginger-powder.webp",
       "products": "/images/73612.webp"
     },
-    "commercialKitchen": "/images/sections/commercial-kitchen.svg",
-    "quality": "/images/sections/quality-assured.svg",
-    "packing": "/images/sections/hygienic-packing.svg",
+    "commercialKitchen": "/images/professional-kitchen.webp",
+    "quality": "/images/quality-assured.webp",
+    "packing": "/images/hygiene-sourcing-packing.webp",
     "productRange": "/images/hero-image-2.webp",
+    "spiceSolution": "/images/spice-solution-food-service.webp",
+    "bulkRange": "/images/bulk-range-hygiene-packing.webp",
     "ltg": "/images/sections/ltg-process.svg"
   },
+  "placeholders": [
+    {
+      "type": "product",
+      "path": "/images/placeholders/product-package.webp",
+      "tag": ["product", "bulk-spices", "bulk-recipe", "dessert"]
+    }
+  ],
   "focus": {
     "title": "Built for professional kitchens",
     "mainFocus": [
-      "AL-KHALIS PRIME is dedicated to delivering premium-quality spices specially designed for professional kitchens, hotels, catering services, restaurants, marriage halls, and food businesses that demand authentic taste, consistency, and hygiene in every meal.",
+      "Al-Khalis Prime Foods is dedicated to delivering premium-quality spices specially designed for professional kitchens, hotels, catering services, restaurants, marriage halls, and food businesses that demand authentic taste, consistency, and hygiene in every meal.",
       "Our main focus is to provide a complete range of expertly packed products that fulfill the daily operational needs of commercial food industries. From traditional whole spices to expertly crafted blended seasonings and ready-to-cook spice mixes, our products are developed to enhance flavor, improve kitchen efficiency, and maintain consistent food quality at scale.",
       "We carefully source our spices from trusted growers and process them under hygienic standards to preserve their natural aroma, color, freshness, and purity. Every product is packed with precision to ensure long shelf life and dependable quality for bulk and commercial usage."
     ],
@@ -61,9 +70,9 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "AL-KHALIS PRIME",
+      "eyebrow": "Al-Khalis Prime Foods",
       "title": "Your reliable spice partner for professional kitchens",
-      "subtitle": "Complete bulk range in 1000g packs — authentic taste, hygienic processing, and consistent quality for hotels, catering, restaurants, and food businesses.",
+      "subtitle": "Complete bulk range in 1000g packs - authentic taste, hygienic processing, and consistent quality for hotels, catering, restaurants, and food businesses.",
       "image": "/images/sections/hero-home.svg",
       "ctaPrimary": { "href": "/products", "label": "View catalog" },
       "ctaSecondary": { "href": "/about", "label": "Our story" }
@@ -71,18 +80,18 @@
     "pillars": [
       {
         "title": "Commercial consistency",
-        "body": "Batch after batch, the same aroma, colour, and flavour your kitchen depends on — engineered for scale in hotels, catering, and high-volume service.",
-        "image": "/images/sections/commercial-kitchen.svg"
+        "body": "Batch after batch, the same aroma, colour, and flavour your kitchen depends on - engineered for scale in hotels, catering, and high-volume service.",
+        "image": "/images/commercial-kitchen-section.webp"
       },
       {
         "title": "Trusted sourcing & hygiene",
         "body": "Spices from trusted growers, processed under strict hygienic standards to preserve natural oils, freshness, and purity in every 1000g pack.",
-        "image": "/images/sections/quality-assured.svg"
+        "image": "/images/hygiene-sourcing-packing.webp"
       },
       {
         "title": "Complete bulk range",
-        "body": "From pure spices to recipe masalas and ready-to-cook blends — one partner for the daily operational needs of your food business.",
-        "image": "/images/sections/hygienic-packing.svg"
+        "body": "From pure spices to recipe masalas and ready-to-cook blends - one partner for the daily operational needs of your food business.",
+        "image": "/images/bulk-range-hygiene-packing.webp"
       }
     ],
     "featuredProductIds": [
@@ -94,47 +103,47 @@
       "badam-pista-kheer-mix"
     ],
     "ltg": {
-      "title": "LTG — Low Temperature Grinding",
+      "title": "LTG - Low Temperature Grinding",
       "body": "LTG helps retain natural oils and flavours in every spice for a fuller, more authentic taste in commercial preparation.",
-      "image": "/images/sections/ltg-process.svg"
+      "image": "/images/bulk-range-hygiene-packing.webp"
     }
   },
   "about": {
     "hero": {
       "eyebrow": "About us",
       "title": "Tradition, purity, and excellence at scale",
-      "subtitle": "Serving Pakistan's food service industry with premium bulk spices — inspired by culinary heritage, built for professional consistency.",
-      "image": "/images/ginger-powder.webp"
+      "subtitle": "Serving Pakistan's food service industry with premium bulk spices - inspired by culinary heritage, built for professional consistency.",
+      "image": "/images/about-us.webp"
     },
     "commercialFocus": {
       "title": "Spice solutions for food service",
       "paragraphs": [
-        "Whether it is a luxury hotel kitchen, a large catering event, a restaurant chain, or a marriage hall preparing food for hundreds of guests, AL-KHALIS PRIME provides reliable spice solutions that deliver rich flavor, professional consistency, and customer satisfaction in every serving."
+        "Whether it is a luxury hotel kitchen, a large catering event, a restaurant chain, or a marriage hall preparing food for hundreds of guests, Al-Khalis Prime Foods provides reliable spice solutions that deliver rich flavor, professional consistency, and customer satisfaction in every serving."
       ],
-      "image": "/images/sections/commercial-kitchen.svg"
+      "image": "/images/spice-solution-food-service.webp"
     },
     "quality": {
       "title": "Quality assured",
       "paragraphs": [
-        "At AL-KHALIS PRIME, quality is not just a promise — it is the foundation of everything we deliver. We are committed to providing premium-quality spices that bring authentic flavor, rich aroma, and exceptional freshness to every kitchen and food business.",
+        "At Al-Khalis Prime Foods, quality is not just a promise - it is the foundation of everything we deliver. We are committed to providing premium-quality spices that bring authentic flavor, rich aroma, and exceptional freshness to every kitchen and food business.",
         "Our spices are carefully sourced from trusted farms and suppliers, ensuring that only the finest raw ingredients are selected for processing. Every product undergoes strict quality inspections and hygienic packaging procedures to maintain purity, taste, and nutritional value.",
-        "We follow modern processing standards combined with traditional expertise to preserve the natural essence of each spice. From red chili and turmeric to black pepper and blended seasonings, every pack of AL-KHALIS PRIME reflects consistency, freshness, and customer satisfaction."
+        "We follow modern processing standards combined with traditional expertise to preserve the natural essence of each spice. From red chili and turmeric to black pepper and blended seasonings, every pack of Al-Khalis Prime Foods reflects consistency, freshness, and customer satisfaction."
       ],
-      "image": "/images/sections/quality-assured.svg"
+      "image": "/images/quality-assured.webp"
     },
     "story": {
       "title": "Our story",
       "paragraphs": [
-        "AL-KHALIS PRIME was founded with a simple vision — to bring the true taste of authentic spices to every household and business. Inspired by the rich culinary traditions of Pakistan, our journey began with a passion for purity, flavor, and excellence.",
-        "From the very beginning, we believed that quality spices have the power to transform ordinary meals into unforgettable experiences. With dedication and hard work, AL-KHALIS PRIME grew into a spice brand committed to delivering freshness, aroma, and premium quality in every pack.",
+        "Al-Khalis Prime Foods was founded with a simple vision - to bring the true taste of authentic spices to every household and business. Inspired by the rich culinary traditions of Pakistan, our journey began with a passion for purity, flavor, and excellence.",
+        "From the very beginning, we believed that quality spices have the power to transform ordinary meals into unforgettable experiences. With dedication and hard work, Al-Khalis Prime Foods grew into a spice brand committed to delivering freshness, aroma, and premium quality in every pack.",
         "Today, we proudly serve restaurants, hotels, catering operations, and food industries with a wide range of carefully selected and hygienically packed spices. By combining traditional values with modern processing techniques, we ensure that every product maintains its natural taste and superior quality.",
         "Our story is built on trust, consistency, and customer satisfaction. Every spice we produce reflects our commitment to excellence and our passion for enhancing flavors across every kitchen.",
-        "At AL-KHALIS PRIME, we are not just selling spices — we are sharing a tradition of taste, purity, and quality that brings people together through food."
+        "At Al-Khalis Prime Foods, we are not just selling spices - we are sharing a tradition of taste, purity, and quality that brings people together through food."
       ]
     },
     "values": {
       "title": "Our values",
-      "intro": "Our values define who we are and guide everything we do — premium quality and lasting relationships built on trust, integrity, and excellence.",
+      "intro": "Our values define who we are and guide everything we do - premium quality and lasting relationships built on trust, integrity, and excellence.",
       "items": [
         {
           "title": "Purity & quality",
@@ -146,7 +155,7 @@
         },
         {
           "title": "Integrity & trust",
-          "body": "Honesty, transparency, and commitment are our foundations — ethical practices with customers, suppliers, and partners."
+          "body": "Honesty, transparency, and commitment are our foundations - ethical practices with customers, suppliers, and partners."
         },
         {
           "title": "Passion for flavor",
@@ -154,7 +163,7 @@
         },
         {
           "title": "Commitment to growth",
-          "body": "We grow responsibly while maintaining the high standards that define AL-KHALIS PRIME — a trusted name locally and internationally."
+          "body": "We grow responsibly while maintaining the high standards that define Al-Khalis Prime Foods - a trusted name locally and internationally."
         }
       ]
     },
@@ -164,7 +173,7 @@
     },
     "commitment": {
       "title": "Our commitment",
-      "body": "Providing premium-quality spices that consistently meet customer expectations — from sourcing the finest ingredients to hygienic processing and modern packaging, excellence at every stage."
+      "body": "Providing premium-quality spices that consistently meet customer expectations - from sourcing the finest ingredients to hygienic processing and modern packaging, excellence at every stage."
     },
     "belief": {
       "title": "What we believe",
@@ -174,11 +183,11 @@
   "contactPage": {
     "hero": {
       "eyebrow": "Contact",
-      "title": "Connect with AL-KHALIS PRIME",
+      "title": "Connect with Al-Khalis Prime Foods",
       "subtitle": "Questions about our bulk catalog, product specifications, or becoming a distributor? Our team supports professional kitchens across Pakistan.",
       "image": "/images/sections/commercial-kitchen.svg"
     },
-    "intro": "This site showcases our commercial spice range for hotels, catering, restaurants, marriage halls, and food businesses. For availability, pricing, and orders, reach out directly — we respond to genuine business enquiries.",
+    "intro": "This site showcases our commercial spice range for hotels, catering, restaurants, marriage halls, and food businesses. For availability, pricing, and orders, reach out directly - we respond to genuine business enquiries.",
     "form": {
       "title": "Send us a message",
       "subtitle": "Share your business details and we will get back to you.",
@@ -224,7 +233,7 @@
     },
     "audiences": {
       "title": "Who we serve",
-      "body": "AL-KHALIS PRIME is built for high-volume food service — consistent quality, hygienic packing, and authentic flavour at scale."
+      "body": "Al-Khalis Prime Foods is built for high-volume food service - consistent quality, hygienic packing, and authentic flavour at scale."
     }
   },
   "footer": {
