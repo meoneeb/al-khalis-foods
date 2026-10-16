@@ -1,9 +1,8 @@
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import SiteHeader from "@/components/commonComponents/SiteHeader";
-import SiteFooter from "@/components/commonComponents/SiteFooter";
 import MotionProvider from "@/components/commonComponents/MotionProvider";
+import SiteFrame from "./site-frame";
 import site from "@/data/site.json";
 
 const manrope = Manrope({
@@ -47,11 +46,7 @@ export default function RootLayout({ children }) {
     >
       <body className="relative min-h-full font-sans text-zinc-900">
         <MotionProvider>
-          <div className="relative flex min-h-full flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-          </div>
+          <SiteFrame>{children}</SiteFrame>
         </MotionProvider>
       </body>
     </html>
