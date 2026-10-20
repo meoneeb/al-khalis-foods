@@ -4,10 +4,10 @@ import { usePathname } from "next/navigation";
 import SiteHeader from "@/components/commonComponents/SiteHeader";
 import SiteFooter from "@/components/commonComponents/SiteFooter";
 
-export default function SiteFrame({ children }) {
+export default function SiteFrame({ children, showDownPage }) {
   const pathname = usePathname();
 
-  if (pathname === "/") {
+  if (pathname === "/" && showDownPage) {
     return children;
   }
 
