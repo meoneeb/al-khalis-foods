@@ -1,7 +1,9 @@
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { VercelToolbar } from "@vercel/toolbar/next";
 import MotionProvider from "@/components/commonComponents/MotionProvider";
+import { homepageDown } from "@/flags";
 import SiteFrame from "./site-frame";
 import site from "@/data/site.json";
 
@@ -38,7 +40,10 @@ export const metadata = {
   description: site.seo.description,
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const showDownPage = await homepageDown();
+  const shouldInjectToolbar = process.env.NODE_ENV === "development";
+
   return (
     <html
       lang="en"
@@ -46,8 +51,9 @@ export default function RootLayout({ children }) {
     >
       <body className="relative min-h-full font-sans text-zinc-900">
         <MotionProvider>
-          <SiteFrame>{children}</SiteFrame>
+          <SiteFrame showDownPage={showDownPage}>{children}</SiteFrame>
         </MotionProvider>
+        {shouldInjectToolbar ? <VercelToolbar /> : null}
       </body>
     </html>
   );

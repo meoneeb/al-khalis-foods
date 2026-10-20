@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@flags-sdk/vercel": "^1.5.1",
     "@headlessui/react": "^2.2.10",
+    "@vercel/toolbar": "^0.2.7",
     "clsx": "^2.1.1",
+    "flags": "^4.3.1",
     "framer-motion": "^13.1.1",
     "fuse.js": "^7.3.0",
     "lucide-react": "^1.16.0",

@@ -1,12 +1,29 @@
-export const metadata = {
-  title: "Temporarily Unavailable",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+import HomeScreen from "@/components/pageComponents/home/homeScreen";
+import { homepageDown } from "@/flags";
 
-export default function Page() {
+export async function generateMetadata() {
+  const showDownPage = await homepageDown();
+
+  if (!showDownPage) {
+    return {};
+  }
+
+  return {
+    title: "Temporarily Unavailable",
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
+
+export default async function Page() {
+  const showDownPage = await homepageDown();
+
+  if (!showDownPage) {
+    return <HomeScreen />;
+  }
+
   return (
     <div className="relative flex min-h-screen flex-col overflow-hidden bg-stone-50">
       <div
